@@ -1,0 +1,21 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{%block title%}BeamNGRP{%endblock%}</title>
+    <link rel="stylesheet" href="{%static 'core/css/styles.css'%}">
+</head>
+<body>
+<h1>BeamNGRP.com is under construction, we hope to be able to let you in soon!</h1>
+<br>
+<a href="https://discord.gg/Cxc9m4TvCT">Join the Discord server here!</a>
+<h2>Admin Login</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+</form>
+</body>
+</html>

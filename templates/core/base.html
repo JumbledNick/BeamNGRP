@@ -1,0 +1,19 @@
+{%load static%}
+<!-- LOCAL TEST 123 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{%block title%}BeamNGRP{%endblock%}</title>
+    <link rel="stylesheet" href="{%static 'core/css/navbar.css'%}">
+</head>
+<body>
+    {%include "partials/navbar.html"%}
+    <main>
+        {%block content%}{%endblock%}
+    </main>
+
+    <script src="{%static 'js/navbar.js'%}" defer></script>
+</body>
+</html>

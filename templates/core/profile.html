@@ -1,0 +1,13 @@
+{% extends "core/base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h1>{{ user.username }}</h1>
+<ul>
+    <li>Bank Balance:{{ request.user.wallet.userbalance.amount }}
+        {% else %}
+        No wallet found
+    </li>
+</ul>
+{% endblock %}

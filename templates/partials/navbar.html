@@ -1,0 +1,25 @@
+<nav class="navbar">
+    <ul class="left_buttons">
+        <li><a href="{%url 'index'%}">Home</a></li>
+        <li><a href="{%url 'forum'%}">Forum</a></li>
+        {%if user.is_staff%}
+            <li><a href="{%url 'admin:index'%}">Admin</a></li>
+        {%endif%}
+        <div class="dropdown">
+            <li><button class="dropbtn">More</button></li>
+            <div class="dropdown-content">
+                <a href="{%url 'business'%}">Businesses</a>
+                <a href="{%url 'market'%}">Marketplace</a>
+                <a href="{%url 'magazine'%}">Magazines</a>
+                <a href="{%url 'wiki'%}">Wiki</a>
+            </div>
+        </div>
+    </ul>
+    <div class="right_buttons">
+        <ul>
+        {% if user.is_authenticated %}
+            <li><a href="{%url 'profile'%}">{{user.username}}</a></li>
+        {% endif %}
+        </ul>
+    </div>
+</nav>

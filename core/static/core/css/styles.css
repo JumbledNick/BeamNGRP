@@ -1,0 +1,13 @@
+:root{
+    --ThemeWhiteColour: #F0F8FF;
+    --ThemeTextColour: #1A0000;
+    --ThemeBorderColour: #395061;
+    --ThemeBackgroundColour: #E8E8E8;
+    --ThemeActiveColour: #B4BABF;
+    --ThemeFont: Arial;
+
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
